@@ -4,8 +4,8 @@ public class Account {
 
     private UserService userService = new UserService();
 
-    public User createUser(String id, String password, String address) {
-        User user = new User(id, password, address);
+    public User createUser(String id, String password, String name) {
+        User user = new User(id, password, name);
 
         return userService.create(user);
     }
